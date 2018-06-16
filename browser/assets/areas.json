@@ -1,0 +1,302 @@
+{
+	"results": [
+		{
+			"id": 1,
+			"title": "Педагогически науки",
+			"poster_path": "assets/areasPictures/pedagogika.png",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "1. Теория и управление на образованието",
+					"path": "assets/ProfessionalFields/theoryAndManagementOfEducation.PNG",
+					"numberOfStudents": 179,
+					"graduated%": 77.86,
+					"practicing%": 86.27,
+					"salary": 803,
+					"unemployed%": 2.47 
+				},
+				{
+					"name": "2. Педагогика",
+					"path": "assets/ProfessionalFields/pedagogy.PNG"
+				},
+				{
+					"name": "3. Педагогика на обучението по...",
+					"path": "assets/ProfessionalFields/pedagogyOfTrainingOn....PNG"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"title": "Хуманитарни науки",
+			"poster_path": "assets/areasPictures/humanitarni.jpg",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "1. Филология",
+					"path": "assets/ProfessionalFields/philology.PNG"
+				},
+				{
+					"name": "2. История и археология",
+					"path": "assets/ProfessionalFields/pedagogy.PNG"
+				},
+				{
+					"name": "3. Философия",
+					"path": "assets/ProfessionalFields/philosophy.PNG"
+				}
+				,
+				{
+					"name": "4. Религия и теология",
+					"path": "assets/ProfessionalFields/religionAndTheology.PNG"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"title": "Социални, стопански и правни науки",
+			"popularity": 135.553451,
+			"poster_path": "assets/areasPictures/socialni.jpg",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "1. Социология, антропология и науки за културата",
+					"path": "assets/ProfessionalFields/sociologyAnthropologyAndCultureStudies.PNG"
+				},
+				{
+					"name": "2. Психология",
+					"path": "assets/ProfessionalFields/psichology.PNG"
+				},
+				{
+					"name": "3. Политически науки",
+					"path": "assets/ProfessionalFields/politicalSciences.PNG"
+				},
+				{
+					"name": "4. Социални дейности",
+					"path": "assets/ProfessionalFields/socialActivities.PNG"
+				},
+				{
+					"name": "5. Обществени комуникации и информационни науки",
+					"path": "assets/ProfessionalFields/publicCommunicationsAndInromationScience.PNG"
+				},
+				{
+					"name": "6. Право",
+					"path": "assets/ProfessionalFields/Law.PNG"
+				},
+				{
+					"name": "7. Администрация и управление",
+					"path": "assets/ProfessionalFields/administrationAndManagement.PNG"
+				},
+				{
+					"name": "8. Икономика",
+					"path": "assets/ProfessionalFields/iconomics.PNG"
+				},
+				{
+					"name": "9. Туризъм",
+					"path": "assets/ProfessionalFields/Tourism.PNG"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"title": "Природни науки, математика и информатика",
+			"poster_path": "assets/areasPictures/prirodni.jpg",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "1. Физически науки",
+					"path": "assets/ProfessionalFields/phisycalSciences.PNG"
+				},
+				{
+					"name": "2. Химически науки",
+					"path": "assets/ProfessionalFields/chemicalSciences.PNG"
+				},
+				{
+					"name": "3. Биологически науки",
+					"path": "assets/ProfessionalFields/biologicalSciences.PNG"
+				},
+				{
+					"name": "4. Науки за земята",
+					"path": "assets/ProfessionalFields/earthSciences.PNG"
+				},
+				{
+					"name": "5. Математика",
+					"path": "assets/ProfessionalFields/matematics.PNG"
+				},
+				{
+					"name": "6. Информатика и компютърни науки",
+					"path": "assets/ProfessionalFields/informaticsAndComputerScience.PNG"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"title": "Технически науки",
+			"poster_path": "assets/areasPictures/tehnicheski.png",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "1. Машинно инженерство",
+					"path": "assets/ProfessionalFields/mechanicalEngineering.PNG"
+				},
+				{
+					"name": "2. Електротехника, електроника и автоматика",
+					"path": "assets/ProfessionalFields/electricalEngineeringElectronicsAndAutomation.PNG"
+				},
+				{
+					"name": "3. Комуникационна и компютърна техника",
+					"path": "assets/ProfessionalFields/communicationAndComputerEquipment.PNG"
+				},
+				{
+					"name": "4. Енергетика",
+					"path": "assets/ProfessionalFields/energetics.PNG"
+				},
+				{
+					"name": "5. Транспорт, корабоплаване и авиация",
+					"path": "assets/ProfessionalFields/transportShippingAndAviation.PNG"
+				},
+				{
+					"name": "6. Материали и материалознание",
+					"path": "assets/ProfessionalFields/materialsAndMaterialsScience.PNG"
+				},
+				{
+					"name": "7. Архитектура, строителство и геодезия",
+					"path": "assets/ProfessionalFields/ArchitectureConstructionAndGeodesy.PNG"
+				},
+				{
+					"name": "8. Проучване, добив и обработка на полезни изкопаеми",
+					"path": "assets/ProfessionalFields/exploretionExtractionAndTreatmentOfMinerals.PNG"
+				},
+				{
+					"name": "9. Металургия",
+					"path": "assets/ProfessionalFields/metallurgy.PNG"
+				},
+				{
+					"name": "10. Химични технологии",
+					"path": "assets/ProfessionalFields/chemicalTechnologies.PNG"
+				},
+				{
+					"name": "11. Биотехнологии",
+					"path": "assets/ProfessionalFields/biotechnology.PNG"
+				},
+				{
+					"name": "12. Хранителни технологии",
+					"path": "assets/ProfessionalFields/foodTechnologies.PNG"
+				},
+				{
+					"name": "13. Общо инженерство",
+					"path": "assets/ProfessionalFields/generalEngineering.PNG"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"title": "Аграрни науки и ветеринарна медицина",
+			"poster_path": "assets/areasPictures/agrarni.jpg",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "1. Растениевъдство",
+					"path": "assets/ProfessionalFields/plantGrowing.PNG"
+				},
+				{
+					"name": "2. Растителна защита",
+					"path": "assets/ProfessionalFields/plantProtection.PNG"
+				},
+				{
+					"name": "3. Животновъдство",
+					"path": "assets/ProfessionalFields/livestockBreeding.PNG"
+				},
+				{
+					"name": "4. Ветеринарна медицина",
+					"path": "assets/ProfessionalFields/veterinaryMedicine.PNG"
+				},
+				{
+					"name": "5. Горско стопанство",
+					"path": "assets/ProfessionalFields/forestry.PNG"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"title": "Здравеопазване",
+			"poster_path": "assets/areasPictures/zdraveopazvane.jpg",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "1. Медицина",
+					"path": "assets/ProfessionalFields/medicine.PNG"
+				},
+				{
+					"name": "2. Стоматология",
+					"path": "assets/ProfessionalFields/dentistry.PNG"
+				},
+				{
+					"name": "3. Фармация",
+					"path": "assets/ProfessionalFields/pharmacy.PNG"
+				},
+				{
+					"name": "4. Здравни грижи",
+					"path": "assets/ProfessionalFields/helathCare.PNG"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"title": "Спорт",
+			"poster_path": "assets/areasPictures/sport.jpg",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "5. Спорт",
+					"path": "assets/ProfessionalFields/Sport.PNG"
+				}
+			]
+		},
+		{
+			"id": 9,
+			"title": "Изкуства",
+			"poster_path": "assets/areasPictures/izkustva.jpeg",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "1. Теория на изкуствата",
+					"path": "assets/ProfessionalFields/artTheory.PNG"
+				},
+				{
+					"name": "2. Изобразително изкуство",
+					"path": "assets/ProfessionalFields/art.PNG"
+				},
+				{
+					"name": "3. Музикално и танцово изкуство",
+					"path": "assets/ProfessionalFields/musicAndDanceArt.PNG"
+				},
+				{
+					"name": "4. Театрално и филмово изкуство",
+					"path": "assets/ProfessionalFields/theaterAndFilmArt.PNG"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"title": "Сигутрност и отбрана",
+			"poster_path": "assets/areasPictures/sigurnost.jpg",
+			"overview": "Тестово_описание",
+			"fields": [
+				{
+					"name": "1. Национална сигурност",
+					"path": "assets/ProfessionalFields/nationalSecurity.PNG"
+				},
+				{
+					"name": "2. Военно дело",
+					"path": "assets/ProfessionalFields/militaryAction.PNG"
+				}
+			]
+		}
+	],
+	"page": 1,
+	"total_results": 1040,
+	"dates": {
+		"maximum": "2018-06-01",
+		"minimum": "2018-04-13"
+	},
+	"total_pages": 52
+}
