@@ -1,0 +1,14 @@
+:host{
+    width: 100%;
+}
+.element-list-details{
+    &__heading{
+        height: 100px;
+    }
+}
+
+mm-element-grid{
+    /deep/ section{
+        padding-top: 0px!important;
+    }
+}

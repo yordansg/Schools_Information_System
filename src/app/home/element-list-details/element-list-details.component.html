@@ -1,0 +1,8 @@
+<section class="center-xs row row--no-margin">
+  <div class="row element-list-details__heading middle-xs col-xs-12">
+    <mm-icon name="back_button" class="back-button" routerLink="../"></mm-icon>
+    <h3 class="page-heading">{{(elementList$|async)?.name}}</h3>
+  </div>
+  <mm-element-grid class="col-xs-12 col-lg-10" [elements]="(elementList$|async)?.items">
+  </mm-element-grid>
+</section>

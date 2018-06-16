@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": [],
+    "paths": {
+      "@elements/shared": ["./app/shared"],
+      "@elements/interfaces": ["./app/shared/interfaces"],
+      "@elements/enums": ["./app/shared/enums"],
+      "@elements/models": ["./app/shared/models"],
+      "@elements/animations": ["./app/shared/animations"],
+      "@elements/core/*": ["./app/core/*"],
+      "@elements/environment": ["./environments/environment"]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

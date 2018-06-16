@@ -1,0 +1,9 @@
+<section class="container-fluid column app-container">
+  <mm-header [isCollecting]="isCollectingElements$|async" [collectables]="collectedElements$|async" (collectablesSelectionComplete)="toggleCreateListForm()">
+  </mm-header>
+  <main class="center-xs row">
+    <router-outlet></router-outlet>
+  </main>
+  <mm-add-to-list-form class="col-xs-12"  *ngIf="isElementListFormShown$|async" [elements]="collectedElements$|async" (formClosed)="toggleCreateListForm()" (formSubmitted)="addElementsToList($event)">
+  </mm-add-to-list-form>
+</section>

@@ -1,0 +1,24 @@
+<section class="element-poster"  [class.element-poster--active]="!isNotFlippable && isSelected" (click)="clickElementPoster($event, element)">
+  <section class="element-poster__rotator">
+    <div class="element-poster--front" mmTint>
+      <img class="element-poster__photo" [src]="element.posterPath" />
+      {{element.title}}
+    </div>
+    <div class="element-poster--back" *ngIf="!isNotFlippable && isSelected">
+      <mm-icon class="element-poster__close-button" name="close" (click)="clickElementPoster($event, null, true)"></mm-icon>
+      <div class="element-poster__content column">
+        <!-- <div class="row row--no-margin element-poster-overview">
+          {{element.title}}
+        </div> -->
+        <div class="element-poster-stats row middle-xs center-xs">
+          <!-- <mm-icon name="vote" class="pl-5 pr-5"></mm-icon> {{element.voteCount | number: '1.0-0'}} -->
+          <!-- <mm-icon name="popularity" class="pl-5 pr-5"></mm-icon> {{element.popularity  | number: '1.0-0' }} -->
+          <mm-button class="element-poster__details-button pl-5 mt-10" (click)="clickElementDetails($event, element)">
+            <mm-icon name="info"></mm-icon>
+            ДЕТАЙЛИ
+          </mm-button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

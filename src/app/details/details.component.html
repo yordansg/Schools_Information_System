@@ -1,0 +1,38 @@
+<article class="details">
+    <div class="details__navigation">
+        <a class="details__navigation-item" (click)="getAdditionalElements('similar')">Подобни</a>
+        <a class="details__navigation-item" (click)="getAdditionalElements('recommended')">Препоръчани</a>
+    </div>
+
+    <div class="pos-relative details__content">
+        <mm-icon class="details__close-button" name="close" (click)="closeSelf()"></mm-icon>
+        <div class="details__title">{{(element$|async)?.title}}
+        </div>
+        <div class="details__cover" #elementCover></div>
+        <img class="details__image large" (extractColors)="morphBackground($event)" crossOrigin="Anonymous" mmColorExtractor [src]="(element$|async)?.posterPath">
+        <div *ngIf="showField">А сега потърсете къде може да учите избраното от вас направление. Списък с всички училища в България, информация
+            и специалности за тях може да намерите:
+            <a href="http://orientirane.mon.bg/?m=81" target="_blank"> ТУК</a>
+            или
+            <a href="http://89.252.196.217/Schools/search" target="_blank"> ТУК</a>
+        </div>
+        <ul class="details__list">
+            <li *ngFor="let field of (element$|async)?.fields">
+                <a (click)="showProffesionalFieldResult(field)">{{field.name}}</a>
+            </li>
+        </ul>
+        <img *ngIf="showField" [src]="path">
+        <div class="details__description">
+        </div>
+    </div>
+
+    <section class="details__additional-elements" [@slideRightAnimation]="additionalElements?.length" *ngIf="additionalElements$|async as additionalElements">
+        <div class="details__additional-element" *ngFor="let element of additionalElements">
+            <mm-element-poster [element]="element" (selectElement)="additionalElementSelected($event)"></mm-element-poster>
+            <h3 class="details__additional-element-title"> {{element.title}} </h3>
+        </div>
+
+    </section>
+
+</article>
+<mm-spinner class="big" *ngIf="loading"></mm-spinner>

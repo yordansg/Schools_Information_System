@@ -1,0 +1,142 @@
+@import 'settings.colors';
+@import 'settings.fonts';
+
+:host{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    flex:1;
+    width: 42%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    justify-content: center;
+    flex: auto;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 16px rgba(0,0,0,0.7523);
+    background: #f9f9f9;
+    height: 100%;
+    flex: 0.8;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.details{
+    z-index: 3;
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    &__navigation{
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        width: 325px;
+        padding: 10px 15px;
+        left: 0px;
+        display: flex;
+        align-items: center;
+    }
+    &__content{
+        height: 100%;
+        position: relative;
+        background-color: #fff;
+        z-index: 2;
+    }
+    &__navigation-item{
+        display: flex;
+        text-align: right;
+        float: left;
+        margin-right: 15px;
+        color: #fff;
+    }
+    &__title{
+        position: right;
+        color: #fff;
+        top: 60px;
+        width: 50%;
+        text-align: center;
+        font-size: 31px;
+        z-index: 1;
+        position: absolute;
+    }
+    &__cover{
+        position: relative;
+        top: 0;
+        height: 300px;
+        width: 100%;
+    }
+    &__image{
+        max-width: 175px;
+        position: absolute;
+        top: 0px;
+        right: 20%;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: translateX(50%);
+    }
+    &__description{
+        position: absolute;
+        padding: 85px 70px 0;
+        text-align: left;
+        font-size: 17px;
+        line-height: 19px;
+    }
+    &__list{
+        text-align: left;
+        margin: 5px;
+    }
+    &__close-button{
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        margin-top: 1px;
+        margin-right: 2px;
+        z-index: 2;
+        /deep/ svg{
+            fill: #fff;
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &__additional-elements{
+        overflow: auto;
+        flex: 0.2;
+        z-index: 1;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        border-right: 1px solid $borderColor;
+        box-shadow: -11px 0px 30px 1px rgba(0, 0, 0, 0.19), -3px 0px 6px rgba(0, 0, 0, 0.53);
+        transform: translateX(10%);
+        position: absolute;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        width: 145px;
+        align-items: center;
+
+    }
+    &__additional-element{
+        max-width: 100px;
+        margin-bottom: 15px;
+        &-title{
+            padding: 15px 0 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 48rem){
+    .details{
+        &__cover{
+            height: 200px;
+        }
+        &__image{
+            width: 300px;
+        }
+        &__description{
+            padding-top: 100px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<section class="row row--no-margin pt-30">
+  <ng-container *ngIf="(elementLists$|async)?.results as elementLists; else loading;">
+    <mm-element-list class="col-xs-3 mb-20" [routerLink]="['/home/lists', list.id]" [elementList]="list" *ngFor="let list of elementLists">
+    </mm-element-list>
+    <span *ngIf="!elementLists?.length"> No element lists found</span>
+  </ng-container>
+  <ng-template #loading>
+    <mm-spinner [class]="'big'"></mm-spinner>
+  </ng-template>
+
+</section>

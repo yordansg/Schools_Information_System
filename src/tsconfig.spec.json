@@ -1,0 +1,30 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "baseUrl": "./",
+    "module": "commonjs",
+    "target": "es5",
+    "paths": {
+      "@elements/shared": ["./app/shared"],
+      "@elements/interfaces": ["./app/shared/interfaces"],
+      "@elements/enums": ["./app/shared/enums"],
+      "@elements/models": ["./app/shared/models"],
+      "@elements/animations": ["./app/shared/animations"],
+      "@elements/core/*": ["./app/core/*"],
+      "@elements/environment": ["./environments/environment"],
+      "@elements/mock-library/*": ["./mock-library/*"]
+    },
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "files": [
+    "test.ts"
+  ],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}
