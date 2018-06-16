@@ -6,7 +6,7 @@
         <mm-search-item (click)="selectItem(i)" [isSelected]="i === (searchState$|async)?.selectedItemIndex" [element]="element" *ngFor="let element of (searchState$|async)?.searchResults; let i = index;">
         </mm-search-item>
         <span class="search__no-results-item" *ngIf="!(searchState$|async)?.searchResults?.length">
-        No results found
+        Няма намерени резултати
         </span>
       </div>
     </div>
