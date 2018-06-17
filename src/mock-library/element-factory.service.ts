@@ -3,9 +3,7 @@ import { IElementInput, Element } from '@elements/models';
 
 const fakeInput: IElementInput = {
     poster_path: 'test.jpg',
-    adult: true,
     overview: 'overview',
-    release_date: '11-02-1990',
     id: 1,
     fields: [
         {
@@ -17,10 +15,7 @@ const fakeInput: IElementInput = {
             path: 'sdasda'
         }
     ],
-    title: 'title',
-    popularity: 1232,
-    vote_count: 2121,
-    vote_average: 123,
+    title: 'title'
 };
 @Injectable()
 export class ElementFactory {
