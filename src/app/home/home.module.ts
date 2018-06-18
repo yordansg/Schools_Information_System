@@ -15,7 +15,6 @@ import { HomeComponent } from './home.component';
 import { ElementListDetailsComponent } from './element-list-details/element-list-details.component';
 import { ElementListsComponent } from './element-lists/element-lists.component';
 import { SchoolTypesComponent } from './school-types/school-types.component';
-import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 @NgModule({
   imports: [
@@ -24,8 +23,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     SharedModule,
     SearchModule.forRoot(),
     StoreModule.forFeature('home', home),
-    EffectsModule.forFeature([HomeEffects]),
-    ChartsModule
+    EffectsModule.forFeature([HomeEffects])
   ],
   providers: [
     AuthGuard

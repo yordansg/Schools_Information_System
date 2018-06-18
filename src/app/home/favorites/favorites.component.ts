@@ -50,12 +50,4 @@ export class FavoritesComponent implements OnInit {
   ngOnInit() {
     // this._store.dispatch(new HomeActions.GetFavoriteElements());
   }
-
-  // events
-  public chartClicked(e: any): void {
-    console.log(e);
-  }
-  public chartHovered(e: any): void {
-    console.log(e);
-  }
 }
