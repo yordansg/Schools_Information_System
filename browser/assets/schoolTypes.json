@@ -1,0 +1,59 @@
+{
+	"results": [
+		{
+			"id": 1,
+			"title": "Духовно училище",
+			"poster_path": "assets/schoolTypesPictures/spiritual.jpg",
+			"overview": "Тестово_описание"
+		},
+		{
+			"id": 2,
+			"title": "Училище по изкуства",
+			"poster_path": "assets/schoolTypesPictures/art.jpg",
+			"overview": "Тестово_описание"
+		},
+		{
+			"id": 3,
+			"title": "Училище по култура",
+			"poster_path": "assets/schoolTypesPictures/culture.jpg",
+			"overview": "Тестово_описание"
+		},
+		{
+			"id": 4,
+			"title": "Професионална гимназия",
+			"poster_path": "assets/schoolTypesPictures/professional.jpg",
+			"overview": "Тестово_описание"
+		},
+		{
+			"id": 5,
+			"title": "Профилирана гимназия",
+			"poster_path": "assets/schoolTypesPictures/profiled.jpg",
+			"overview": "Тестово_описание"
+		},
+		{
+			"id": 6,
+			"title": "Спортно училище",
+			"poster_path": "assets/schoolTypesPictures/sport.jpg",
+			"overview": "Тестово_описание"
+		},
+		{
+			"id": 7,
+			"title": "Средно училище",
+			"poster_path": "assets/schoolTypesPictures/sredno.png",
+			"overview": "Тестово_описание"
+		},
+		{
+			"id": 447332,
+			"title": "Друго/Не съм сигурен",
+			"poster_path": "assets/schoolTypesPictures/other.png",
+			"overview": "Тестово_описание"
+		}
+	],
+	"page": 1,
+	"total_results": 1040,
+	"dates": {
+		"maximum": "2018-06-01",
+		"minimum": "2018-04-13"
+	},
+	"total_pages": 52
+}
