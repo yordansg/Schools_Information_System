@@ -4,8 +4,12 @@
     (elementListToggled)="toggleElementList($event)" (elementSelected)="selectElement($event)" (elementDetailsShown)="showElementDetails($event)">
   </mm-element-grid> -->
   <div>
+    <div style="display: block">
+      <canvas class="format__chart" baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"></canvas>
+    </div>
     <ul style="list-style-type:disc">
-      <li class="format__paragraph">  
+      <li class="format__paragraph">
         Топ 1000 училища за
         <strong>
           <u>2016-та</u>

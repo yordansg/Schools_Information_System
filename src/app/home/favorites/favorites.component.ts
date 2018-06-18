@@ -16,6 +16,11 @@ import { HomeState } from './../home.state';
 export class FavoritesComponent implements OnInit {
   public homeState$: Observable<HomeState>;
   public loading: boolean;
+  // Pie
+  public doughnutChartLabels: string[] = ['Класации и справки за СУ', 'Класации и справки за ВУ', 'Годишни такси ВУ', 'Информация за кандидатстване след 7 клас',
+                                     'Информация за кандидатстване след 12 клас', 'Кариерно ориентиране'];
+  public doughnutChartData: number[] = [3, 2, 1, 1, 1, 1];
+  public doughnutChartType = 'doughnut';
 
   constructor(private _store: Store<AppState>) {
     this.homeState$ = this._store.select('home').share();
@@ -44,6 +49,13 @@ export class FavoritesComponent implements OnInit {
 
   ngOnInit() {
     // this._store.dispatch(new HomeActions.GetFavoriteElements());
+  }
 
+  // events
+  public chartClicked(e: any): void {
+    console.log(e);
+  }
+  public chartHovered(e: any): void {
+    console.log(e);
   }
 }
