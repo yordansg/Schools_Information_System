@@ -7,12 +7,12 @@ const fakeInput: IElementInput = {
     id: 1,
     fields: [
         {
-            name: 'xaxa',
-            path: 'sdasda'
+            name: 'test name',
+            path: 'test path'
         },
         {
-            name: 'xaxa',
-            path: 'sdasda'
+            name: 'test name',
+            path: 'test path'
         }
     ],
     title: 'title'
