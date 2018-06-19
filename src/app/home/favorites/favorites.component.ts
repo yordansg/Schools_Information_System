@@ -16,11 +16,12 @@ import { HomeState } from './../home.state';
 export class FavoritesComponent implements OnInit {
   public homeState$: Observable<HomeState>;
   public loading: boolean;
-  // Pie
-  public doughnutChartLabels: string[] = ['Класации и справки за СУ', 'Класации и справки за ВУ', 'Годишни такси ВУ', 'Информация за кандидатстване след 7 клас',
-                                     'Информация за кандидатстване след 12 клас', 'Кариерно ориентиране'];
-  public doughnutChartData: number[] = [3, 2, 1, 1, 1, 1];
-  public doughnutChartType = 'doughnut';
+  rankingSU = false;
+  rankingVU = false;
+  taxes = false;
+  info7 = false;
+  info12 = false;
+  career = false;
 
   constructor(private _store: Store<AppState>) {
     this.homeState$ = this._store.select('home').share();
@@ -49,5 +50,54 @@ export class FavoritesComponent implements OnInit {
 
   ngOnInit() {
     // this._store.dispatch(new HomeActions.GetFavoriteElements());
+  }
+
+  rankingSUClicked() {
+    this.rankingSU = true;
+    this.rankingVU = false;
+    this.taxes = false;
+    this.info7 = false;
+    this.info12 = false;
+    this.career = false;
+  }
+  rankingVUClicked() {
+    this.rankingVU = true;
+    this.rankingSU = false;
+    this.taxes = false;
+    this.info7 = false;
+    this.info12 = false;
+    this.career = false;
+  }
+  taxesClicked() {
+    this.taxes = true;
+    this.rankingSU = false;
+    this.rankingVU = false;
+    this.info7 = false;
+    this.info12 = false;
+    this.career = false;
+  }
+  info7licked() {
+    this.info7 = true;
+    this.rankingSU = false;
+    this.rankingVU = false;
+    this.taxes = false;
+    this.info12 = false;
+    this.career = false;
+  }
+  info12Clicked() {
+    this.info12 = true;
+    this.rankingSU = false;
+    this.rankingVU = false;
+    this.taxes = false;
+    this.info7 = false;
+    this.career = false;
+  }
+  careerClicked() {
+    this.career = true;
+    this.rankingSU = false;
+    this.rankingVU = false;
+    this.taxes = false;
+    this.info7 = false;
+    this.info12 = false;
   }
 }

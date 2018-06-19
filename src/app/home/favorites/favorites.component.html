@@ -3,80 +3,117 @@
     [isToggleable]="true" [isInToggleMode]="(homeState$|async)?.isCollectingElements" (elementCollected)="collectElement($event)"
     (elementListToggled)="toggleElementList($event)" (elementSelected)="selectElement($event)" (elementDetailsShown)="showElementDetails($event)">
   </mm-element-grid> -->
+  <section>
+    <hr />
+    <a href="javascript:void(0)" (click)="rankingSUClicked()" class="btn">
+      <span class="btn-content">Класации и справки за Средните училища в България</span>
+      <span class="icon">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </span>
+    </a>
+    <hr/>
+    <a href="javascript:void(0)" (click)="rankingVUClicked()" class="btn">
+      <span class="btn-content">Класации и справки за Висшите училища в България</span>
+      <span class="icon">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </span>
+    </a>
+    <hr/>
+    <a href="javascript:void(0)" (click)="taxesClicked()" class="btn">
+      <span class="btn-content">Годишни такси ВУ</span>
+      <span class="icon">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </span>
+    </a>
+    <hr/>
+    <a href="javascript:void(0)" (click)="info7licked()" class="btn">
+      <span class="btn-content">Информация за кандидатстване след 7 клас във всички частни училища в България</span>
+      <span class="icon">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </span>
+    </a>
+    <hr/>
+    <a href="javascript:void(0)" (click)="info12Clicked()" class="btn">
+      <span class="btn-content">Информация за кандидатстване след 12 клас</span>
+      <span class="icon">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </span>
+    </a>
+    <hr/>
+    <a href="javascript:void(0)" (click)="careerClicked()" class="btn">
+      <span class="btn-content">Кариерно ориентиране</span>
+      <span class="icon">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </span>
+    </a>
+    <hr/>
+  </section>
   <div>
     <ul style="list-style-type:disc">
-      <li class="format__paragraph">
+      <p class="format__paragraph">
+        <strong>
+          <u>На тази страницата може да видите полезна допълнителна информация, която да ви помогне да изберете вашето средно,
+            както и евентуално последващото го висше образование.
+          </u>
+        </strong>
+      </p>
+      <li *ngIf='rankingSU' class="format__paragraph">
         Топ 1000 училища за
         <strong>
           <u>2016-та</u>
         </strong> година в България според резултатите от ДЗИ за 12 клас по български език и литература може да видите
         <a href="http://www.danybon.com/obrazovanie/top-1000-uchilista-matura-bg-2016/" target="_blank"> ТУК</a>
       </li>
-      <p class="format__paragraph">
+      <p *ngIf='rankingSU' class="format__paragraph">
         Топ 1000 училища за
         <strong>
           <u>2017-та</u>
         </strong> година в България според резултатите от ДЗИ за 12 клас по български език и литература може да видите
         <a href="http://www.danybon.com/obrazovanie/top-1000-uchilista-bg-dzi-bel-2017/" target="_blank"> ТУК</a>
       </p>
-      <p class="format__paragraph">
+      <p *ngIf='rankingSU' class="format__paragraph">
         Очаквайте скоро и класацията за
         <strong>
           <u>2018-та</u>
         </strong>...
       </p>
-      <p>
-        <br/>
-      </p>
-      <li class="format__paragraph">
+      <li *ngIf='taxes' class="format__paragraph">
         Утвърдените от МОН годишни такси за кандидатстване и за обучение на студентите и докторантите за учебната 2017/2018 година
         в държавните висши училища може да видите
         <a href="http://www.strategy.bg/FileHandler.ashx?fileId=9121"> ТУК</a>
       </li>
-      <p>
-        <br/>
-      </p>
-      <li class="format__paragraph">
+      <li *ngIf='info7' class="format__paragraph">
         Информация, условия за кандидатстване, такси за обучение за кандидатсване след 7 клас във всички частни училища в България
         може да бъде намерена
         <a href="https://docs.google.com/spreadsheets/d/1TRp15SX7adJAr3-oUiLWBn4p9HbORmZ36Ght7hb-ysI/edit#gid=0" target="_blank">
           ТУК</a>
       </li>
-      <p>
-        <br/>
-      </p>
-      <li class="format__paragraph">Класация за училищата в София на база мнението на регистриращи се потребители в сайта може да намерите
+      <li *ngIf='rankingSU' class="format__paragraph">Класация за училищата в София на база мнението на регистриращи се потребители в сайта може да намерите
         <a href="http://alekdimitrov.com/uchilishte/rezultati-NVO.asp" target="_blank">
           ТУК</a>
       </li>
-      <p>
-        <br/>
-      </p>
-      <li class="format__paragraph">Тестове и полезна информация за
+      <li *ngIf='info12' class="format__paragraph">Тестове и полезна информация за
         <strong>
           <u>Матури 2018</u>
         </strong>
         <a href="http://www.zamatura.eu/matura/%D0%BC%D0%B0%D1%82%D1%83%D1%80%D0%B8-2018/" target="_blank">
           ТУК</a>
       </li>
-      <p class="format__paragraph">Тестове и полезна информация за
+      <p *ngIf='info12' class="format__paragraph">Тестове и полезна информация за
         <strong>
           <u>Матури 2017</u>
         </strong>
         <a href="http://www.zamatura.eu/matura/%D0%BC%D0%B0%D1%82%D1%83%D1%80%D0%B8-2017/" target="_blank">
           ТУК</a>
       </p>
-      <p class="format__paragraph">Тестове и полезна информация за
+      <p *ngIf='info12' class="format__paragraph">Тестове и полезна информация за
         <strong>
           <u>Матури 2016</u>
         </strong>
         <a href="http://www.zamatura.eu/matura/%D0%BC%D0%B0%D1%82%D1%83%D1%80%D0%B8-2016/" target="_blank">
           ТУК</a>
       </p>
-      <p>
-        <br/>
-      </p>
-      <li class="format__paragraph">СПРАВКА за минималния и максималния бал от второ класиране за
+      <li *ngIf='rankingSU' class="format__paragraph">СПРАВКА за минималния и максималния бал от второ класиране за
         <strong>2016-та</strong> година по паралелки в гимназиите в
         <strong>
           <u>
@@ -97,7 +134,7 @@
           </u>
         </strong>
       </li>
-      <li class="format__paragraph">СПРАВКА за минималния и максималния бал от второ класиране за
+      <p *ngIf='rankingSU' class="format__paragraph">СПРАВКА за минималния и максималния бал от второ класиране за
         <strong>2017-та</strong> година по паралелки в гимназиите в
         <strong>
           <u>
@@ -117,18 +154,15 @@
               Бургас</a>
           </u>
         </strong>
-      </li>
-      <p class="format__paragraph">
+      </p>
+      <p *ngIf='rankingSU' class="format__paragraph">
         Очаквайте скоро и справка за
         <strong>
           <u>2018-та</u>
         </strong>...
         <br/> За справка за училищата във вашата област се обърнете към районния инспекторат по образованието.
       </p>
-      <p>
-        <br/>
-      </p>
-      <li class="format__paragraph">Справки за университетите по специалности и дисциплини за кандидатстване може да направите
+      <li *ngIf='rankingVU' class="format__paragraph">Справки за университетите по специалности и дисциплини за кандидатстване може да направите
         <strong>
           <u>
             <a href="https://www.edutech.bg/education-portal/edu-consult/" target="_blank">
@@ -136,14 +170,19 @@
           </u>
         </strong>
       </li>
-      <p>
-        <br/>
-      </p>
-      <li class="format__paragraph">
+      <li *ngIf='career' class="format__paragraph">
         <strong>
           <u>
             <a href="http://orientirane.mon.bg" target="_blank">
-              НАЦИОНАЛЕН ПОРТАЛ ЗА КАРИЕРНО ОРИЕНТИРАНЕ НА УЧЕНИЦИТЕ</a>
+              Национален портал за кариерно ориентиране на учениците</a>
+          </u>
+        </strong>
+      </li>
+      <li *ngIf='rankingVU' class="format__paragraph">
+        <strong>
+          <u>
+            <a href="http://rsvu.mon.bg" target="_blank">
+              Рейтингова система на висшите училища</a>
           </u>
         </strong>
       </li>

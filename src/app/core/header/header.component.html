@@ -1,7 +1,10 @@
 <header class="header row" [class.header--is-collecting]="isCollecting">
   <ng-container *ngIf="!isCollecting">
     <div class="col-xs-3 row row--no-margin center-xs middle-xs">
-      <mm-icon class="logo" name="mortaboard"></mm-icon>
+      <mm-icon  class="logo" name="mortaboard">
+          <a href="#">
+          </a>
+      </mm-icon>
     </div>
     <mm-search class="col-xs-6"></mm-search>
     <nav class="col-xs-3 header__navigation row row--no-margin center-xs">
