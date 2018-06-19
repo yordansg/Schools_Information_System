@@ -1,7 +1,10 @@
 <article class="details">
     <div class="details__navigation">
-        <a class="details__navigation-item" (click)="getAdditionalElements('similar')">Подобни</a>
-        <a class="details__navigation-item" (click)="getAdditionalElements('recommended')">Препоръчани</a>
+        <!-- <a class="details__navigation-item" (click)="getAdditionalElements('similar')">Подобни</a>
+        <a class="details__navigation-item" (click)="getAdditionalElements('recommended')">Препоръчани</a> -->
+        <a class="details__navigation-item" routerLink="/home/info" routerLinkActive="header__navigation-item--active">
+            Полезна информация
+          </a>
     </div>
 
     <div class="pos-relative details__content">
