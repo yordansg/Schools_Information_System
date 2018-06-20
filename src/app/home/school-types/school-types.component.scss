@@ -1,5 +1,11 @@
 :host{
     width: 100%;
+    /deep/ mm-element-poster{
+        img{
+            height: 150px;
+            width: auto;
+        }
+    }
 }
 
 .format{

@@ -13,6 +13,8 @@
         </div>
         <div class="details__cover" #elementCover></div>
         <img class="details__image large" (extractColors)="morphBackground($event)" crossOrigin="Anonymous" mmColorExtractor [src]="(element$|async)?.posterPath">
+        <div *ngIf="!showField">Моля изберете желаното от Вас професионално направление:
+        </div>
         <div *ngIf="showField">А сега потърсете къде може да учите избраното от вас направление. Списък с всички училища в България, информация
             и специалности за тях може да намерите:
             <a href="http://orientirane.mon.bg/?m=81" target="_blank"> ТУК</a>
